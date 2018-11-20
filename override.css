@@ -1,3 +1,29 @@
+
+@font-face {
+    font-family:'ProximaNova-Regular';
+	src: 
+		url('d9fe41ee-4904-4a11-ba11-b61cd3be767f.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+
+@font-face {
+    font-family:'ProximaNova-Bold';
+	src: 
+		url('64017d81-9430-4cba-8219-8f5cc28b923e.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+} 
+
+body, html {
+    font-family: 'ProximaNova-Regular';
+}
+
 .mainFeature .frame .mainBackgroundImage img {
     height: auto!important;
 }
@@ -14,6 +40,7 @@
     background-color: #fff;
     border: 1px solid #cccccc;
     margin-top: -2px;
+    font-family: 'ProximaNova-Regular';
 }
 
 .algolia-search-container.closed {
@@ -23,7 +50,8 @@
 }
 
 .algolia-ac-title {
-    font-weight: bold;
+    font-family:'ProximaNova-Bold';
+    -webkit-text-stroke: .015rem;
     color: #59452a;
     font-size: 15px;
     letter-spacing: 1px;
@@ -31,6 +59,7 @@
     margin: 0 0 20px;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .algolia-ac-results {
@@ -112,6 +141,8 @@
 
 .algolia-ac-product-title, .algolia-ac-related-title {
     font-size: 17px;
+    font-family:'ProximaNova-Bold';
+    -webkit-text-stroke: .015rem;
     font-weight: bold;
     color: #333333;
     text-decoration: none;
@@ -176,7 +207,9 @@
 
 .stats-hits {
     color: #bf4e0f;
+    font-family:'ProximaNova-Bold';
     font-weight: bold;
+    -webkit-text-stroke: .015rem;
 }
 
 .stats-query:before {
@@ -219,6 +252,8 @@
 
 .hit-title {
     font-size: 17px;
+    font-family:'ProximaNova-Bold';
+    -webkit-text-stroke: .015rem;
     font-weight: bold;
     line-height: 1.25em!important;
     margin-bottom: 6px;
@@ -248,11 +283,15 @@
 
 .ais-sort-by-selector:before{ 
     content: "Sort By";
+    font-family:'ProximaNova-Bold';
     font-weight: bold;
+    -webkit-text-stroke: .015rem;
     margin-right: 10px;
 }
 
 .ais-header {
+    font-family:'ProximaNova-Bold';
+    -webkit-text-stroke: .015rem;
     font-weight: bold;
     color: #59452a;
     font-size: 15px;
@@ -264,7 +303,9 @@
 }
 
 .alg-sidebar-title {
+    font-family:'ProximaNova-Bold';
     font-weight: bold;
+    -webkit-text-stroke: .015rem;
     font-size: 17px;
     margin-bottom: 20px;
 }
@@ -356,7 +397,9 @@ input[type=checkbox] {
 }
 
 .ais-hierarchical-menu--item__active > div > .ais-hierarchical-menu--link {
+    font-family:'ProximaNova-Bold';
     font-weight: bold;
+    -webkit-text-stroke: .015rem;
 }
 
 .ais-hierarchical-menu--list__lvl1 {
@@ -377,6 +420,8 @@ input[type=checkbox] {
     text-decoration: none;
     color: #333;
     text-transform: uppercase;
+    font-family:'ProximaNova-Bold';
+    -webkit-text-stroke: .015rem;
     font-weight: bold;
     padding: 15px 40px;
     border: 2px solid #000;
@@ -409,7 +454,9 @@ input[type=checkbox] {
     left: 0;
     padding: 20px 20px 16px 20px;
     z-index: 2;
+    font-family:'ProximaNova-Bold';
     font-weight: bold;
+    -webkit-text-stroke: .015rem;
     letter-spacing: 1px;
 }
 
