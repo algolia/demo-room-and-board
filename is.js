@@ -119,9 +119,19 @@
             if (results.userData[0].bannerImg) {
                 banner.innerHTML = `<a href="` + results.userData[0].bannerUrl + `"><span>` + results.userData[0].bannerText + `</span><div style="background-image: url('` + results.userData[0].bannerImg + `')"></div></a>`;
             }
+            else {
+              banner.innerHTML = '';
+            }
             if (results.userData[0].highlightPromoted) {
                 document.querySelector(".ais-hits").classList.add("promotedHit");
             }
+            else {
+              document.querySelector(".ais-hits").classList.remove("promotedHit");
+            }
+          }
+          else {
+            banner.innerHTML = '';
+            document.querySelector(".ais-hits").classList.remove("promotedHit");
           }
         }
       });
