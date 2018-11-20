@@ -21,7 +21,7 @@
     var client = algoliasearch(aglSearchAppID, aglSearchAPIKey);
     
     var query = "";
-    var targetURL = "/search.html";
+    var targetURL = "search.html";
 
     function algoliaSearch() {
 
