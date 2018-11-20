@@ -22,6 +22,7 @@
 
 body, html {
     font-family: 'ProximaNova-Regular';
+    -webkit-text-stroke: .01rem;
 }
 
 .mainFeature .frame .mainBackgroundImage img {
