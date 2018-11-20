@@ -417,4 +417,5 @@ input[type=checkbox] {
     background-size: cover;
     height: 300px;
     width: 100%;
+    background-position: center center;
 }
