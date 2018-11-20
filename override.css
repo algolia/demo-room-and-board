@@ -180,11 +180,15 @@
 }
 
 .stats-query:before {
-    content: "'";
+    content: "for '";
 }
 
 .stats-query:after {
     content: "'";
+}
+
+.stats-query:empty {
+    display: none;
 }
 
 .hit {

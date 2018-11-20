@@ -79,7 +79,7 @@
         instantsearch.widgets.stats({
           container: '#stats-container',
           templates: {
-            body: '<span class="stats-hits">{{nbHits}}</span> results for <span class="stats-query">{{query}}</span>'
+            body: '<span class="stats-hits">{{nbHits}}</span> results <span class="stats-query">{{query}}</span>'
           }
         })
       );
