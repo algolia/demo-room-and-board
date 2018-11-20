@@ -1,0 +1,416 @@
+.mainFeature .frame .mainBackgroundImage img {
+    height: auto!important;
+}
+
+#header .header-links {
+    position: relative;
+}
+
+.algolia-search-container {
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    margin-top: -2px;
+}
+
+.algolia-search-container.closed {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0s;
+}
+
+.algolia-ac-title {
+    font-weight: bold;
+    color: #59452a;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin: 0 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.algolia-ac-results {
+    display: flex;
+}
+
+.algolia-ac-col.popular {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: none;
+}
+
+.algolia-ac-col.results {
+    flex-grow: 2;
+    flex-basis: 0;
+}
+
+.algolia-ac-results-content {
+    display: flex;
+}
+
+.algolia-ac-results-col.products, .algolia-ac-results-col.content {
+    flex-grow: 1;
+    flex-basis: 0;
+    width: 380px;
+}
+
+.algolia-ac-results-col.products {
+    padding: 20px 0 20px 20px;
+}
+
+.algolia-ac-results-col.content {
+    margin-left: 20px;
+    border-left: 1px solid #ccc;
+    padding: 20px;
+}
+
+.algolia-ac-product-container {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    align-items: center;
+    transition: .2s;
+    will-change: auto;
+}
+
+.algolia-ac-product-image {
+    height: 160px;
+    width: 160px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 25px;
+    min-width: 160px;
+    background-color: #fff;
+}
+
+.algolia-ac-related-image {
+    max-width: 100%;
+    height: 180px;
+    width: 349px;
+    background-size: cover;
+    background-position: center;
+    min-width: 150px;
+    background-color: #fff;
+}
+
+.algolia-ac-related-container {
+    text-decoration: none;
+    display: inline-block;
+    color: #333;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.algolia-ac-related-container:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.algolia-ac-product-title, .algolia-ac-related-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+    line-height: 1.25em!important;
+}
+
+.algolia-ac-related-title {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.algolia-ac-link {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    display: inline-block;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.algolia-ac-link:hover {
+    color: #bf4e0f;
+    text-decoration: underline;
+}
+
+.algolia-ac-link span {
+    color: #979797;
+    margin-left: 10px;
+}
+
+.hit-img {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100%;
+    background-color: #fff;
+}
+
+.alg-wrapper {
+    display: flex;
+}
+
+.alg-sidebar {
+    flex-basis: 300px;
+    flex-grow: 0;
+    margin-right: 50px;
+}
+
+.alg-results {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.alg-results-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-hits {
+    color: #bf4e0f;
+    font-weight: bold;
+}
+
+.stats-query:before {
+    content: "'";
+}
+
+.stats-query:after {
+    content: "'";
+}
+
+.hit {
+    text-decoration: none;
+    color: #333;
+}
+
+.hit.true .hit-title, .hit.true .hit-price {
+    color: #bf4e0f;
+}
+
+.ais-hits {
+    display: flex;
+    flex-wrap: wrap;    
+    width: calc(100% + 30px);
+    margin-left: -15px;
+}
+
+.ais-hits.promotedHit .ais-hits--item:first-child {
+    flex-basis: 50%;
+}
+
+.ais-hits--item {
+    flex-grow: 0;
+    flex-basis: 25%;
+    padding: 15px;
+}
+
+.hit-title {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.25em!important;
+    margin-bottom: 6px;
+    margin-top: 3px;
+}
+
+.hit-title em {
+    font-style: normal;
+}
+
+.hit-price {
+    margin-bottom: 0;
+}
+
+.hit-price:empty {
+    display: none;
+}
+
+.hit-price:before {
+    content: "$";
+}
+
+.ais-sort-by-selector {
+    display: flex;
+    align-items: center;
+}
+
+.ais-sort-by-selector:before{ 
+    content: "Sort By";
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.ais-header {
+    font-weight: bold;
+    color: #59452a;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin: 0 0 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.alg-sidebar-title {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.ais-root {
+    margin-bottom: 40px;
+}
+
+.ais-range-slider--body {
+    width: calc(100% - 26px);
+    margin-left: 12px;
+}
+
+.ais-range-slider .rheostat-horizontal .rheostat-progress {
+    background-color: #bf4e0f!important;
+}
+
+.ais-range-slider--handle {
+    border-color: #bf4e0f!important;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+.ais-refinement-list--label {
+        position: relative;
+        margin-left: 34px;
+        user-select: none;
+}
+        .ais-refinement-list--label:before {
+            content: "";
+            background-color: #fefefe;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ccc;
+            display: block;
+            position: absolute;
+            left: -34px;
+            top: 0;
+            transition: .14s ease-in-out;
+        }
+        .ais-refinement-list--label:after {
+            content:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWNoZWNrIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=);
+            position: absolute;
+            top: 2px;
+            line-height: 0;
+            left: -33px;
+            opacity: 0;
+        }
+    
+    .ais-refinement-list--item__active .ais-refinement-list--label:before {
+        border-color: #000;
+    }
+    .ais-refinement-list--item__active .ais-refinement-list--label:after {
+            opacity: 1;
+            transition-delay: .06s;
+            transition: .14s ease-in-out;
+        }
+
+.ais-refinement-list--item + .ais-refinement-list--item {
+    margin-top: 7px;
+}
+
+.ais-refinement-list--label {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.ais-refinement-list--count:before, .ais-hierarchical-menu--count:before {
+    content: "(";
+}
+
+.ais-refinement-list--count:after, .ais-hierarchical-menu--count:after {
+    content: ")";
+}
+
+.ais-refinement-list--count, .ais-hierarchical-menu--count {
+    color: #a9a9a9;
+}
+
+.ais-hierarchical-menu--link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.ais-hierarchical-menu--item + .ais-hierarchical-menu--item {
+    margin-top: 7px;
+}
+
+.ais-hierarchical-menu--item__active > div > .ais-hierarchical-menu--link {
+    font-weight: bold;
+}
+
+.ais-hierarchical-menu--list__lvl1 {
+    margin-top: 7px;
+}
+
+.ais-pagination--item__page, .ais-pagination--item__previous {
+    display: none;
+}
+
+.ais-pagination {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+.ais-pagination--item__next a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: 2px solid #000;
+    letter-spacing: 1px;
+}
+
+#algBanner {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#algBanner:before {
+    content: "";
+    background-color: rgba(0,0,0,.4);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#algBanner span {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 20px 16px 20px;
+    z-index: 2;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#algBanner div {
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
